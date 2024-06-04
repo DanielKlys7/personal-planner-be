@@ -10,7 +10,8 @@ services:
     env_file: .env
     environment:
       NODE_ENV: development
-
+    volumes:
+      - .:/app
   db:
     image: postgres
     env_file: .env
