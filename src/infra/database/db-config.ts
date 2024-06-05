@@ -1,9 +1,8 @@
 import { FastifyInstance } from 'fastify';
 import plugin from 'typeorm-fastify-plugin';
 
-import env from '@/infra/env';
-
-import { User } from '@/domain/entities/User.entity';
+import { User } from '../../domain/entities/User.entity';
+import env from '../env';
 
 export function configureDatabase(server: FastifyInstance) {
   try {
